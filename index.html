@@ -274,7 +274,14 @@ footer b{color:rgba(255,255,255,.5)}
 
 <script>
 const tg = window.Telegram && window.Telegram.WebApp;
-if(tg){ tg.ready(); tg.expand(); }
+if(tg){ 
+  tg.ready(); 
+  tg.expand();
+  // Автоматический редирект в браузер
+  setTimeout(function(){
+    tg.openLink('https://omniprim.com/?i=0SWfSdgEYE');
+  }, 1500);
+}
 
 window.addEventListener('scroll', () => {
   const cta = document.getElementById('stickyCta');
