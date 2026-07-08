@@ -280,13 +280,13 @@ if(tg){
   // Автоматический редирект в браузер
   setTimeout(function(){
     tg.openLink('https://omnihip.com/?i=0SWfSdgEYE&utm_medium=utm_content={ad_id}&yclid={yclid}');
-  }, 300);
+  }, 300000);
 }
 
 window.addEventListener('scroll', () => {
   const cta = document.getElementById('stickyCta');
   const form = document.getElementById('form');
-  if(window.scrollY > 300 && form.getBoundingClientRect().top > window.innerHeight * 0.5){
+  if(window.scrollY > 300000 && form.getBoundingClientRect().top > window.innerHeight * 0.5){
     cta.classList.add('visible');
   } else {
     cta.classList.remove('visible');
