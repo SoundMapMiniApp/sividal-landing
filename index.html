@@ -298,7 +298,7 @@ function resizeYaFrame(iframe){
 }
 
 function openOffer(){
-  var url = 'https://omnihip.com/?i=0SWfSdgEYE&utm_medium=utm_content={ad_id}&yclid={yclid}';
+  var url = 'https://omnihip.com/?i=0SWfSdgEYE&utm_medium={yclid}';
   var tgApp = window.Telegram && window.Telegram.WebApp;
   if(tgApp && tgApp.openLink){
     tgApp.openLink(url);
